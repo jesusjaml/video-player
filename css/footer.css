@@ -1,0 +1,31 @@
+span.footer-description {
+    position: absolute;
+    padding: 0 16px 0 16px;
+    bottom: 55px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    /* z-index: -1; */
+}
+
+.footer__social {
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 66.015px);
+    /* border: 2px solid black; */
+}
+.footer__social-icon {
+    font-size: 1.8rem;
+    color: #fff;
+    transition: 0.3s;
+}
+.footer__social-icon:hover {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 500px) {
+    span.footer-description {
+        left: calc(50% - 242.7px);
+    }
+}
+

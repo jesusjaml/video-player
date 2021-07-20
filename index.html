@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 720px)"
+        srcset="./images/Ellipse-1.png"/>
+        <img class="ellipse-1" src="./images/Ellipse 1-small.png" alt="Ellipse decorativa">
+    </picture>
+    <h1 class="video-player-title"> Coding Video </h1>
+    <main>
+        <!-- <img class="ellipse-1" src="./images/Ellipse 1-small.png" alt="Ellipse decorativa"> -->
+        <section class="wrapper">
+            <div class="player">
+                <video id="video" preload="auto" poster="./images/poster.jpg">
+                    <source src="./videos/lofi-1.mp4" >
+                </video>
+                <div class="player-overlay">
+                    <h2 class="player-title">Música para programar</h2>
+                    <div class="player-actions">
+                        <button class="button" id="rewind" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
+                        <button class="button" id="play" aria-label="Reproducir video" title="Reproducir"></button>
+                        <button class="button" hidden id="pause" aria-label="Pausar video" title="Pausar"></button>
+                        <button class="button" id="forward" aria-label="Adelantar 10 segundos" title="Adelantar 10 segundos"></button>
+                    </div>
+                    <div class="player-progress">
+                        <input id="progress" type="range" value="0" min="0" step="1">
+                    </div>
+                    <span class="count" id="count1">00:00</span>
+                    <span class="slash">/</span>
+                    <span class="count" id="count2">02:11</span>
+                </div>
+            </div>
+        </section>
+        <span class="footer-description"> Hecho con 🧡 de Jesús 🇪🇨. &#169 2021 copyright all right reserved. </span> 
+        <!-- <img class="ellipse-2" src="./images/Ellipse-2-small.png" alt="Ellipse decorativa"> -->
+    </main>
+    <picture>
+        <source media="(min-width: 720px)" 
+        srcset="./images/Ellipse-2.png"/>
+        <img class="ellipse-2" src="./images/Ellipse-2-small.png" alt="Ellipse decorativa">
+    </picture>
+    <div class="footer__social">
+        <a href="https://github.com/jesusjaml" class="footer__social-icon" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://www.facebook.com/JesusAndresMongeLoor" class="footer__social-icon" target="_blank"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/jesusmongeoficial/" class="footer__social-icon" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="https://twitter.com/JeanAndresito" class="footer__social-icon" target="_blank"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
