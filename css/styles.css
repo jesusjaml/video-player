@@ -1,8 +1,8 @@
 /*=======  IMPORT FILES AND FONTS =======*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url("/css/button.css");
+/* @import url("/css/button.css");
 @import url("/css/ellipses-decorativas.css");
-@import url("/css/footer.css");
+@import url("/css/footer.css"); */
 
 * {
     margin: 0;
@@ -29,6 +29,22 @@ body {
     display: flex;
     align-items: center;
 }
+
+/*** Ellipses decorativas ***/
+
+img.ellipse-1 {
+    position: absolute;
+    top: 0px;
+}
+
+img.ellipse-2 {
+    position: absolute;
+    /* top: 341px;  */
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+} 
+
 
 .video-player-title {
     position: absolute;
@@ -97,6 +113,38 @@ body {
     /* z-index: 2; */
 }
 
+/*** Buttons styles ***/
+
+.button {
+    inline-size: 32px;
+    block-size: 32px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.button:active {
+    transform: scale(0.9);
+}
+
+#play {
+    background-image: url(../images/play.svg);
+}
+
+#pause {
+    background-image: url(../images/pause.svg);    
+}
+
+#rewind {
+    background-image: url(../images/-10.svg);
+}
+
+#forward {
+    background-image: url(../images/+10.svg);
+}
+
 .player-progress {
     position: absolute;
     inset-block-end: 0;
@@ -143,5 +191,39 @@ body {
     left: calc(50% - 5.815px);
     font-size: 0.8rem;
     color: white;
+}
+
+/*** === FOOTER ***/
+
+
+span.footer-description {
+    position: absolute;
+    padding: 0 16px 0 16px;
+    bottom: 55px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+/*  z-index: -1; */
+}
+
+.footer__social {
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 66.015px);
+/*  border: 2px solid black; */
+}
+.footer__social-icon {
+    font-size: 1.8rem;
+    color: #fff;
+    transition: 0.3s;
+}
+.footer__social-icon:hover {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 500px) {
+    span.footer-description {
+        left: calc(50% - 242.7px);
+    }
 }
 
