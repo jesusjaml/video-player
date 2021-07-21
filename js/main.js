@@ -83,5 +83,5 @@ function handleRewind() {
     document.getElementById("count1").innerHTML= time($video.currentTime);
     });
     $video.addEventListener('loadedmetadata',function(){
-        document.getElementById("count2").innerHTML= time(vid.duration);
+        document.getElementById("count2").innerHTML= time($video.duration);
     })
